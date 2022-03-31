@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:hint="@string/hint_name"
+        android:focusableInTouchMode="true"/>
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_age"
+        android:focusableInTouchMode="true"/>
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_insert"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+
+    <EditText
+        android:id="@+id/edit_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_delete"
+        android:layout_marginTop="@dimen/activity_margin_large"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_delete"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_search"
+        android:layout_marginTop="@dimen/activity_margin_large"
+        android:focusableInTouchMode="true"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_search"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btn_select"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DataBaseExample</string>
+    <string name="hint_name">Escribe tu nombre</string>
+    <string name="hint_age">Escribe tu edad</string>
+    <string name="text_btn_insert">Insertar</string>
+    <string name="text_btn_delete">Borrar</string>
+    <string name="text_btn_search">Buscar</string>
+    <string name="text_btn_select">Seleccionar todos</string>
+    <string name="hint_search">Nombre a buscar</string>
+    <string name="hint_delete">Nombre a borrar</string>
+    <string name="update_4">CREATE TABLE NewTable;</string>
+</resources>
