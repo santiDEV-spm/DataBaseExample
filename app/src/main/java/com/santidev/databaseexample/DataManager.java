@@ -96,9 +96,17 @@ public class DataManager {
             super(context, DB_NAME, null, DB_VERSION);
         }
 
+        //solamente se ejecuta la primera vez que arranca la app
+        // y debe crearse la base de datos
         @Override
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+            String newTablesQuery = "CREATE TABLE "+
+                                    TABLE_NAMES_AND_ADDRESS + " (" +
+                                    TABLE_ROW_ID + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                                    TABLE_ROW_NAME + " TEXT NOT NULL, " +
+                                    TABLE_ROW_AGE + " TEXT NOT NULL);";
+            Log.i("Creating DataBase", newTablesQuery);;
+            sqLiteDatabase.execSQL(newTablesQuery);
         }
 
         @Override
